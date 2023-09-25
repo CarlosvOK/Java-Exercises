@@ -1,0 +1,52 @@
+Analisis:
+
+
+Entradas:
+
+numeroPedido:0;
+agencia=0;
+mes=0;
+destino="";
+cantidadMayores=0;
+cantidadMenores=0;
+opcion="S";
+
+PROCESOS:
+//menores 85% y mayores 50%
+
+if (destino.equals("A")) {
+     montoMenores = cantidadMenores * montoCosta;
+     montoMayores = cantidadMayores * montoCosta;
+
+     porcMenores = montoMenores * porcMenor;//212.000
+     porcMayores = montoMayores * porcMayor;
+
+     totalPagarMenores = montoMenores - porcMenores;//212.000-250.000
+     totalPagarMayores = montoMayores - porcMayores;
+
+     // MONTO TOTAL DESTINO A
+     montoTotalCosta = montoTotalCosta + (totalPagarMenores + totalPagarMenores);
+
+     montoTotalCosta=montoTotalCosta+(totalPagarMenores+totalPagarMenores)
+}
+
+A: cantidadPedidosA1=cantidadPedidosA1+1;
+   cantidadPedidosA2=cantidadPedidosA2+1;
+   cantidadTotalPedidos=cantidadTotalPedidos+(cantidadPedidosA1+cantidadPedidosA2)
+
+B: totalMayoresB=totalMayoresB+cantidadMayores;
+   totalMenoresB=totalMenoresB+cantidadMenores;
+
+c: montoTotal=montoTotal+(montoTotalCosta+montoTotalSierra);
+
+C: promedioMayoresB=totalMayoresB/cantidadPedidosA2;
+
+SALIDAS:
+cantidadPedidosA1
+cantidadPedidosA2
+totalMayoresB
+totalMenoresB
+montoTotal
+promedioMayores
+   
+	

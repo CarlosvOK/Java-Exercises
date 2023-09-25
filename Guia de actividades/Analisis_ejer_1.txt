@@ -1,0 +1,60 @@
+*******************
+ANALISIS
+******************
+
+CONSTANTES:
+
+MONTO FIJO: 1500
+
+INGRESOS:
+
+- nombre
+- Cuota
+
+PROCESOS:
+
+- pago_total = monto_fijo/cuota
+- saldo_pagar = monto_fijo - pago_total
+
+
+
+SALIDAS:
+saldo a pagar
+
+
+**********************************************
+//Variables
+nombre=""
+monto_fijo=1500.00
+cuota=0
+total=0
+pago=0.00
+pago_total=0.00
+saldo_pagar=0.00
+
+
+//Ingreso de nombre usuario
+
+Escribir "Ingrese su nombre, por favor"
+leer nombre
+
+Escribir "Ingrese cantidad de cuotas a pagar 1 - 6"
+leer cuota
+
+pago_total = monto_fijo/cuota
+
+saldo_pagar = monto_fijo - pago_total
+
+
+//salidas por pantalla
+Escribir "El total a pagar es: ",saldo_pagar
+
+Escribir "Ingrese el monto a pagar: "
+leer pago
+
+total = monto_fijo - pago
+
+
+
+
+

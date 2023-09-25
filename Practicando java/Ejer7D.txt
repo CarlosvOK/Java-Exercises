@@ -1,0 +1,42 @@
+ENTRADAS
+nombre="";
+apellido="";
+nro1=0;
+nro2=0;
+nro3=0;
+opcion="S";
+
+
+PROCESOS
+if(nro1==20 && nro2==31 && nro3==5){
+	aciertoUno=10000;
+	
+}else if(nro1==20){
+	cantidadAciertos=cantidadAciertos+1;
+	monto=5000;
+	}else if(nro2==31){
+		cantidadAciertos=cantidadAciertos+1;
+		monto=3000
+	}else if (nro3==){
+		cantidadAciertos=cantidadAciertos+1;
+		monto=2000;
+	}
+	
+TotalLoteria=TotalLoteria+monto;
+cantidadTotalAciertos=cantidadTotalAciertos+cantidadAciertos;
+
+if(cantidadAciertos>acierto){
+	maxNombre=nombre;
+}
+
+SALIDAS
+cantidadAciertos
+monto
+TotalLoteria
+cantidadTotalAciertos
+maxNombre
+
+variables
+maxNombre="";
+acierto=0;
+aciertoUno=10000

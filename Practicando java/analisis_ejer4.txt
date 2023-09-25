@@ -1,0 +1,32 @@
+//ANALISIS
+
+Entradas:
+1: cola 2: Naranja 3: Lila limon
+
+A.	Lata de 300cm3 (Disponible para todas las gaseosas)
+B.	Botella de 600cm3 (Disponible para cola, y naranja)
+C.	Botella de 1 Litro (Disponible para Lima Limón)
+
+Salidas:
+opcion= 1: cola 2: Naranja 3: Lila limon
+tamaño
+monto a pagar(IVA INCLUIDO)
+
+procesos:
+if(bebida==1){
+	System.out.print("Elija el tamaño de la bebida: ")
+	tamaño= entrada.newInt();
+	
+	if (tamaño==1){
+		opcion="Lata de 300cm3";
+	}
+}
+
+
+VARIABLES:
+bebida=0;
+opcion=0;
+tamaño=0;
+monto=0.00;
+
+	

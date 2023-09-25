@@ -1,0 +1,53 @@
+//ANALISIS
+
+Entradas:
+
+num_fac=-1;
+factura=3;
+num_art=0; "1=A"- "2=B" - "3=C"
+cant_vendidas=0;
+precio_uni=0.00;
+
+
+PROCESOS:
+while(num_fac!=0){
+	while(factura!=0){
+		
+	}
+}
+
+1: if (num_art==1){
+	monto_sinIva=monto_sinIva+precio_uni;
+	monto_total_IVA=monto_sinIva*IVA;
+	monto_total1= monto_total+(monto_total_IVA+monto_sinIva);
+	
+	if(monto_total1>3000){
+		cant_mayores=cant_mayores+1
+	}
+	
+}else if(num_art==2){
+		monto_total2=precio_uni*IVA;
+		
+		if(monto_total2>3000){
+			cant_mayores=cant_mayores+1
+		}
+	}
+	
+
+2: fact_total=fact_total(monto_total1+monto_total2+monto_total3);
+
+3: cant_venB=cant_venB+cant_vendidas
+
+4:porc=(monto_sinIva/cant_vendidas)*100
+
+
+SALIDAS:
+monto_total1=0;
+monto_total2=0;
+monto_total3=0;
+fact_total=0.00;
+cant_venB=0;
+porc=0.00;
+
+variables:
+IVA=0.21;

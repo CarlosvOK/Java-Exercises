@@ -1,0 +1,45 @@
+//ANALISIS
+
+Entradas:
+plataforma=0; - "1=Youtube"  - "2=Spotify"
+titulo="";
+duracion=0.00;(en minutos)
+calidad="";(SOLO YOUTUBE)
+
+PROCESOS:
+cant_total_canciones=cant_total_canciones+1;
+
+cant_total_spo1=cant_total_spo1+1;
+
+cant_total_you2=cant_total_you2+1;
+
+costo_total=costo_total+(monto_spotify+monto_youtube);
+
+tiempo_minutos=tiempo_minutos+duracion;
+tiempo_horas=tiempo_minutos/HORA;
+
+
+SALIDAS:
+cant_total_canciones
+cant_total_spo1
+cant_total_you2
+costo_total
+tiempo_minutos
+tiempo_horas
+
+variables:
+plataforma=0;
+titulo="";
+duracion=0;
+calidad="";
+HORA=60;
+monto_spotify=0.00;
+monto_youtube=0.00;
+cant_total_canciones=0;
+cant_total_spo1=0;
+cant_total_you2=0;
+costo_total=0.00;
+tiempo_minutos=0;
+tiempo_horas=0.00;
+
+

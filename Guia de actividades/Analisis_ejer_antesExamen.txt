@@ -1,0 +1,86 @@
+//Analisis
+
+Entradas:
+
+-Numero de pasaje (0)
+-Ciudad origen
+-ciudad destino
+-Numero de coche
+-Precio del pasaje
+
+
+SALIDAS:
+- Monto total de pasajes (EN PESOS)
+- Monto de iVA a abonar (alicuota DE IVA 10,5%)
+- Cantidad de pasajes que tuvieron como origen CABA, y destino la ciudad de ROSARIO
+- Numero de coche que mas viajes realizo en la semana.
+
+
+PROCESO: 
+
+1: [Aculumador] - montototalpasajes= montototalpasajes + preciopasaje
+
+2: preciopasaje = 0
+   iva = preciopasaje * 10.5
+   precio_con_iva = preciopasaje + iva
+
+3: PARA CABA: cant_pasaje_caba = cant_pasaje_caba +1
+   PARA ROSARIO: cant_pasaje_rosario = cant_pasaje_rosario +1
+   
+4: if num_coche ==1:
+	cont_conche1 = cont_conche1 + 1 
+	max = cont_conche1
+	
+	if num_coche ==2:
+	cont_conche2 = cont_conche2 + 1 
+	max = cont_conche2
+	
+	if num_coche ==3:
+	cont_conche3 = cont_conche3 + 1 
+	max = cont_conche3
+Escribir "Ingrese el precio del pasaje: "sin saltar
+		Leer precio_pasaje
+		
+		//calculo el precio con el iva
+		iva = precio_pasajepasaje * 10.5
+		precio_con_iva = precio_pasaje + iva
+		
+		//calculo el monto total de pasajes en pesos
+		montototalpasajes= montototalpasajes + precio_pasaje
+		
+		mostrar ""
+		
+		mostrar "Coche 1: CABA (Ciudad de buenos aires) "
+		mostrar "Coche 2: Rosario (Santa fe)"
+		mostrar "Coche 3: Resistencia (Chaco) "
+		
+		mostrar ""
+		Escribir "Ingrese numero de coche segun su ciudad de destino: "
+		leer num_coche
+		
+		si num_coche=1 Entonces
+			cont_coche1 = cont_coche1 + 1 
+			max = cont_coche1
+		FinSi
+		
+		si num_coche=2 Entonces
+			cont_coche2 = cont_coche2 + 1 
+			max = cont_coche2
+		FinSi
+		
+		si num_coche=3 Entonces
+			cont_coche3 = cont_coche3 + 1 
+			max = cont_coche3
+		FinSi
+		
+	FinMientras
+	
+	Escribir "Monto total de pasajes en pesos es: ",montototalpasajes
+	Escribir "Monto de IVA: ",precio_con_iva
+	
+	
+	si ciudad_des="caba" o ciudad_des="CABA" Entonces
+				cant_pasaje_caba = cant_pasaje_caba +1
+				
+			FinSi
+			

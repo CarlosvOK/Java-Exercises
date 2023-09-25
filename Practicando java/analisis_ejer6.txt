@@ -1,0 +1,40 @@
+//ANALISIS
+
+Entradas:
+System.out.print("Ingrese aviso: ");
+aviso=1=por linea o 2=notables;
+System.out.print("Ingrese cantidad de linea: ");
+cant_linea=0;
+System.out.print("Ingrese la cantidad de paginas del aviso: ");
+cant_pag=0.00
+
+
+Salidas:
+costo_totalp=0.00;
+costo_totaln=0.00;
+preciolinea=350.00;
+comsion=0.17,65;
+total_abonar=0.00;
+fijopl=100.00;
+fijoN1=1000;
+fijoN2=5000;
+fijoN3=10000;
+fijoN=500;
+
+procesos:
+if(aviso==1){
+	costo_totalp=(cant_linea*preciolinea)+fijopl;
+}else if(aviso==2){
+	if(cant_pag==2.5){
+		costo_totaln=fijoN1
+	}else if (cant_pag==1.5){
+		costo_totaln=fijoN2;
+	}else if(cant_pag==1){
+		costo_totaln=fijoN3;
+	}else{
+		costo_totaln=fijoN;
+	}
+}
+
+
+

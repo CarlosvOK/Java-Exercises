@@ -1,0 +1,18 @@
+//ANALISIS
+
+Entradas:
+aviso=1=por linea o 2=notables;
+cant_linea=0;
+cant_hojas=0;
+
+
+Salidas:
+costo_total=0.00;
+comsion=0.17,65;
+total_abonar=0.00;
+
+
+procesos:
+
+
+

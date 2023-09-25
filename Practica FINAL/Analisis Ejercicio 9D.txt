@@ -1,0 +1,68 @@
+ANALISIS 
+
+ENTRADAS:
+codigoDeposito="";
+modeloAuto="";
+unidades=0;
+continuar="S";
+
+PROCESOS:
+A:	movimientosStock=movimientosStock+1;
+
+B:	if(deposito==1){
+		if(modeloAuto.equals("A")){
+			monto1=vehiculo1*unidades;
+			stockDepositoAu1=stockDepositoAu1+unidades;
+		}else if(modeloAuto.equals("B")){
+			monto1=vehiculo2*unidades;
+			stockDepositoAu2=stockDepositoAu2+unidades;
+		}else if(modeloAuto.equals("C")){
+			monto1=vehiculo3*unidades;
+			stockDepositoAu3=stockDepositoAu3+unidades;
+		}
+		totalStockDeposito1=(stockDepositoAu1+stockDepositoAu2+stockDepositoAu3);
+		
+	}else if(deposito==2){
+		if(modeloAuto.equals("A")){
+			monto2=vehiculo1*unidades;
+			stockDepositoAu1=stockDepositoAu1+unidades;
+		}else if(modeloAuto.equals("B")){
+			monto2=vehicuo2*unidades;
+			stockDepositoAu2=stockDepositoAu2+unidades;
+		}else if(modeloAuto.equals("C")){
+			monto2=vehiculo3*unidades;
+			stockDepositoAu3=stockDepositoAu3+unidades;
+		}
+		totalStockDeposito2=(stockDepositoAu1+stockDepositoAu2+stockDepositoAu3);
+	}else if(deposito==3){
+		if(modeloAuto.equals("A")){
+			monto3=vehiculo1*unidades;
+			stockDepositoAu1=stockDepositoAu1+unidades;
+		}else if(modeloAuto.equals("B")){
+			monto3=vehiculo2*unidades;
+			stockDepositoAu2=stockDepositoAu2+unidades;
+		}else if(modeloAuto.equals("C")){
+			monto3=vehiculo3*unidades;
+			stockDepositoAu3=stockDepositoAu3+unidades;
+		}
+		totalStockDeposito3=(stockDepositoAu1+stockDepositoAu2+stockDepositoAu3);
+		
+	}
+	
+B=
+
+C= stockTotalValorizado=totalStockDeposito1+totalStockDeposito2+totalStockDeposito3;
+
+D: if(unidades>stockMaximo){
+	stockMaximo=movimientosStock;
+}
+
+totalValorizado=totalValorizado(monto1+monto2+monto3);
+
+SALIDAS:
+totalValorizado=0.00;
+movimientosStock=0;
+System.out.println("DEPOSITO 1");
+System.out.println("Modelo vehiculo A"+stockDeposito1Au1);
+stockTotalValorizado=0;
+stockMaximo=0;
